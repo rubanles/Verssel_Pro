@@ -24,7 +24,7 @@
     .logo {
       max-width: 300px;
       height: auto;
-      margin:0 auto;
+      margin: 0 auto;
       display: block;
     }
 
@@ -54,10 +54,14 @@
 
     .icon-grid {
       display: flex;
-      justify-content: space-evenly;
       flex-wrap: wrap;
-      padding: 20px;
+      justify-content: space-evenly;
       gap: 20px;
+      padding: 20px;
+    }
+
+    .icon-link {
+      text-decoration: none;
     }
 
     .icon-box {
@@ -69,6 +73,10 @@
       text-align: center;
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
       transition: transform 0.3s;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      min-height: 250px;
     }
 
     .icon-box:hover {
@@ -80,12 +88,11 @@
       height: 125px;
       max-height: 150px;
       object-fit: contain;
-      margin-bottom: 10px;
     }
 
     .icon-box p {
       font-weight: bold;
-      margin:-15px;
+      margin: 0px;
     }
 
     /* Responsive Media Queries */
@@ -100,6 +107,8 @@
 
       .icon-box {
         width: 90%;
+        max-width: 350px;
+        margin: 0 auto;
       }
 
       .language-switch {
@@ -121,7 +130,7 @@
       }
 
       .icon-box {
-        width: 95%;
+        width: 85%;
       }
     }
   </style>
@@ -152,17 +161,15 @@
       <a href="under-construction.html" target="_blank" class="icon-link">
         <div class="icon-box">
           <img src="bidfresh.jpg" alt="Bidfresh">
-          <p>The better water system <br>for your healthy life</p>
+          <p>The better water system for your healthy life</p>
         </div>
       </a>  
-      
       <a href="under-construction.html" target="_blank" class="icon-link">
         <div class="icon-box">
           <img src="kppm.jpg" alt="KPPM">
           <p>Recruitment company for the Engineering and Construction</p>
         </div>
       </a>
-      
       <a href="under-construction.html" target="_blank" class="icon-link">  
         <div class="icon-box">
           <img src="fertech.jpg" alt="Fertech">
@@ -182,28 +189,24 @@
     </header>
 
     <div class="icon-grid">
-      
       <a href="under-construction.html" target="_blank" class="icon-link">
         <div class="icon-box">
           <img src="vesselpro.jpg" alt="Vessel Pro">
           <p>Syarikat Penyelidikan dan Pembangunan Teknologi Pertanian</p>
         </div>
       </a>
-      
       <a href="under-construction.html" target="_blank" class="icon-link">  
         <div class="icon-box">
           <img src="bidfresh.jpg" alt="Bidfresh">
-          <p>Sistem air yang lebih baik <br>untuk kehidupan sihat anda</p>
+          <p>Sistem air yang lebih baik untuk kehidupan sihat anda</p>
         </div>
       </a>
-      
       <a href="under-construction.html" target="_blank" class="icon-link">  
         <div class="icon-box">
           <img src="kppm.jpg" alt="KPPM">
           <p>Syarikat pengambilan pekerja dalam Kejuruteraan dan Pembinaan</p>
         </div>
       </a>
-      
       <a href="under-construction.html" target="_blank" class="icon-link">
         <div class="icon-box">
           <img src="fertech.jpg" alt="Fertech">
