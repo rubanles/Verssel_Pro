@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Ministry of Agriculture and Food Security</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to left, #246809, #7aaa63);
+      color: white;
+      text-align: center;
+    }
+
+    header {
+      padding: 20px;
+    }
+
+    .logo {
+      max-width: 300px;
+      height: auto;
+      margin:0 auto;
+      display: block;
+    }
+
+    .language-switch {
+      position: absolute;
+      top: 20px;
+      right: 30px;
+      font-weight: bold;
+      z-index: 999;
+    }
+
+    .language-switch a {
+      color: white;
+      text-decoration: none;
+      padding: 0 5px;
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin: 20px 0 10px;
+    }
+
+    h2 {
+      font-size: 1.2rem;
+      font-weight: 300;
+    }
+
+    .icon-grid {
+      display: flex;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+      padding: 20px;
+      gap: 20px;
+    }
+
+    .icon-box {
+      background: white;
+      color: #004d00;
+      width: 220px;
+      padding: 20px;
+      border-radius: 15px;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s;
+    }
+
+    .icon-box:hover {
+      transform: scale(1.05);
+    }
+
+    .icon-box img {
+      width: 100%;
+      height: 125px;
+      max-height: 150px;
+      object-fit: contain;
+      margin-bottom: 10px;
+    }
+
+    .icon-box p {
+      font-weight: bold;
+      margin:-15px;
+    }
+
+    /* Responsive Media Queries */
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 2rem;
+      }
+
+      h2 {
+        font-size: 1rem;
+      }
+
+      .icon-box {
+        width: 90%;
+      }
+
+      .language-switch {
+        top: 10px;
+        right: 15px;
+        font-size: 0.9rem;
+      }
+
+      .logo {
+        max-width: 200px;
+        margin: 30px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .icon-grid {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .icon-box {
+        width: 95%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="language-switch">
+    <a href="#" id="bm-switch">BM</a> | 
+    <a href="#" id="en-switch">EN</a>
+  </div>
+
+  <!-- English Content -->
+  <div id="content-en">
+    <header>
+      <img src="logo_for_try-removebg-preview.png" alt="Malaysia Logo" class="logo">
+      <h2>Official Portal</h2>
+      <h1>VESSEL PRO SDN BHD</h1>
+      <h2>WELCOME</h2>
+    </header>
+
+    <div class="icon-grid">
+      <div class="icon-box">
+        <img src="vesselpro.jpg" alt="Vessel Pro">
+        <p>Agriculture Technology Research and Development Company</p>
+      </div>
+      <div class="icon-box">
+        <img src="bidfresh.jpg" alt="Bidfresh">
+        <p>The better water system <br>for your healthy life</p>
+      </div>
+      <div class="icon-box">
+        <img src="kppm.jpg" alt="KPPM">
+        <p>Recruitment company for the Engineering and Construction</p>
+      </div>
+      <div class="icon-box">
+        <img src="fertech.jpg" alt="Fertech">
+        <p>Developing and providing technology for smart farming</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Malay Content -->
+  <div id="content-bm" style="display: none;">
+    <header>
+      <img src="logo_for_try-removebg-preview.png" alt="Logo Malaysia" class="logo">
+      <h2>Portal Rasmi</h2>
+      <h1>VESSEL PRO SDN BHD</h1>
+      <h2>SELAMAT DATANG</h2>
+    </header>
+
+    <div class="icon-grid">
+      <div class="icon-box">
+        <img src="vesselpro.jpg" alt="Vessel Pro">
+        <p>Syarikat Penyelidikan dan Pembangunan Teknologi Pertanian</p>
+      </div>
+      <div class="icon-box">
+        <img src="bidfresh.jpg" alt="Bidfresh">
+        <p>Sistem air yang lebih baik <br>untuk kehidupan sihat anda</p>
+      </div>
+      <div class="icon-box">
+        <img src="kppm.jpg" alt="KPPM">
+        <p>Syarikat pengambilan pekerja dalam Kejuruteraan dan Pembinaan</p>
+      </div>
+      <div class="icon-box">
+        <img src="fertech.jpg" alt="Fertech">
+        <p>Membangunkan dan menyediakan teknologi untuk pertanian pintar</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Language Switcher Script -->
+  <script>
+    document.getElementById('bm-switch').addEventListener('click', function(event) {
+      event.preventDefault();
+      document.getElementById('content-en').style.display = 'none';
+      document.getElementById('content-bm').style.display = 'block';
+    });
+
+    document.getElementById('en-switch').addEventListener('click', function(event) {
+      event.preventDefault();
+      document.getElementById('content-en').style.display = 'block';
+      document.getElementById('content-bm').style.display = 'none';
+    });
+  </script>
+
+</body>
+</html>
